@@ -1,0 +1,52 @@
+{
+  "name": "frontend-mv--uilib-components",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "./node_modules/@s-ui/studio/bin/sui-studio.js build",
+    "check:release": "./node_modules/@s-ui/studio/bin/sui-studio.js check-release",
+    "co": "./node_modules/@s-ui/studio/bin/sui-studio.js commit",
+    "commitmsg": "validate-commit-msg",
+    "deploy": "sui-deploy frontend-mv--uilib-components --now",
+    "dev": "./node_modules/@s-ui/studio/bin/sui-studio.js dev",
+    "generate": "./node_modules/@s-ui/studio/bin/sui-studio.js generate --prefix sui --scope frontend-mv--uilib-components",
+    "lint:js": "sui-lint js",
+    "lint:sass": "sui-lint sass",
+    "lint": "npm run lint:js && npm run lint:sass",
+    "phoenix:ci": "npx @s-ui/mono phoenix --no-progress && (cd demo && npx @s-ui/mono phoenix --no-progress)",
+    "phoenix": "npx @s-ui/mono phoenix && (cd demo && npx @s-ui/mono phoenix)",
+    "precommit": "sui-precommit run",
+    "release": "./node_modules/@s-ui/studio/bin/sui-studio.js release",
+    "start": "./node_modules/@s-ui/studio/bin/sui-studio.js start"
+  },
+  "repository": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@s-ui/deploy": "2",
+    "@s-ui/precommit": "2",
+    "@s-ui/studio": "6",
+    "husky": "0.14.3",
+    "validate-commit-msg": "2.14.0"
+  },
+  "dependencies": {
+    "@s-ui/studio-utils": "^1.6.0"
+  },
+  "config": {
+    "sui-mono": {
+      "packagesFolder": "./components",
+      "deepLevel": 2
+    },
+    "validate-commit-msg": {
+      "types": "@s-ui/mono/src/types"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
+  },
+  "sasslintConfig": "./node_modules/@s-ui/lint/sass-lint.yml"
+}
