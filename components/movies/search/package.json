@@ -1,5 +1,5 @@
 {
-  "name": "sui-movies-search",
+  "name": "mv-movies-search",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -10,8 +10,6 @@
   },
   "dependencies": {
     "@s-ui/component-dependencies": "1",
-    "@s-ui/react-atom-card": "^1.3.0",
-    "@s-ui/react-atom-input": "^3.9.0",
     "@s-ui/react-context": "^1.4.0"
   },
   "keywords": [],

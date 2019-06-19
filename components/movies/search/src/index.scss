@@ -1,6 +1,6 @@
 @import '~@schibstedspain/sui-theme/lib/index';
-@import '~@s-ui/react-atom-input/lib/index';
-@import '~@s-ui/react-atom-card/lib/index';
+@import '../../searchBox/src/index';
+@import '../../searchList/src/index';
 
 .mv-MoviesSearch {
   padding: $p-xl;
