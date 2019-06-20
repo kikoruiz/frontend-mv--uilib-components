@@ -38,6 +38,9 @@
     "cvz-skylab-theme": "1"
   },
   "config": {
+     "sui-studio": {
+      "name": "Skylab Components"
+    },
     "sui-mono": {
       "access": "public",
       "packagesFolder": "./components",
