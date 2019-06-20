@@ -2,17 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import AtomCard from '@s-ui/react-atom-card'
 
-const MoviesSearchList = ({list}) => (
-  <div className="mv-MoviesSearch-list">
-    {list.map(item => {
-      const imageSrc =
-        item.image && `https://image.tmdb.org/t/p/w200${item.image}`
+const MoviesSearchList = ({list, linkFactory: Link}) => (
+  <div className="mv-MoviesSearchList">
+    <header className="mv-MoviesSearchList-header">List of movies</header>
+    {list.map(({image, title, id}) => {
+      const imageSrc = image && `https://image.tmdb.org/t/p/w200${image}`
       const renderMedia = () =>
-        imageSrc && <img className="mv-MoviesSearch-itemImage" src={imageSrc} />
-      const renderContent = () => <header>{item.title}</header>
+        imageSrc && (
+          <img className="mv-MoviesSearchList-itemImage" src={imageSrc} />
+        )
+      const renderContent = () => <header>{title}</header>
+      const detailUrl = `/detail/${id}`
 
       return (
-        <AtomCard key={item.id} media={renderMedia} content={renderContent} />
+        <Link href={detailUrl} className="mv-MoviesSearchList-item" key={id}>
+          <AtomCard media={renderMedia} content={renderContent} />
+        </Link>
       )
     })}
   </div>
@@ -25,11 +30,13 @@ MoviesSearchList.propTypes = {
     PropTypes.shape({
       id: PropTypes.number
     })
-  )
+  ),
+  linkFactory: PropTypes.func
 }
 
 MoviesSearchList.defaultProps = {
-  list: []
+  list: [],
+  linkFactory: ({children, href, className}) => <a href={href} className={className}>{children}</a> // eslint-disable-line
 }
 
 export default MoviesSearchList
