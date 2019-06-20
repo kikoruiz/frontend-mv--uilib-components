@@ -1,1 +1,1 @@
-return (<MovieSearchBox />)
+return (<MoviesSearchBox />)
