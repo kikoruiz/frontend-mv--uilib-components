@@ -2,12 +2,10 @@
 @import '../../searchBox/src/index';
 @import '../../searchList/src/index';
 
-.mv-MoviesSearch {
-  padding: $p-xl;
+$bg-movies-search: $c-accent-light !default;
 
-  &-item {
-    &Image {
-      width: 100%;
-    }
-  }
+.mv-MoviesSearch {
+  background-color: $bg-movies-search;
+  font-family: $ff-sans-serif;
+  padding: $p-xl;
 }
