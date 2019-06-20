@@ -8,7 +8,7 @@ class MovieDetail extends Component {
 
   async componentDidMount() {
     const detail = await this.props.domain
-      .get('get_detail_movies_use_case')
+      .get('get_detail_movie_use_case')
       .execute({
         id: this.props.id
       })
