@@ -1,5 +1,5 @@
 {
-  "name": "mv-movies-search-box",
+  "name": "cvz-react-movies-search-box",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@s-ui/component-dependencies": "1",
-    "@s-ui/react-atom-input": "^3.10.0"
+    "@s-ui/react-atom-input": "3"
   },
   "keywords": [],
   "author": "",
