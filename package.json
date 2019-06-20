@@ -32,7 +32,10 @@
     "validate-commit-msg": "2.14.0"
   },
   "dependencies": {
-    "@s-ui/studio-utils": "^1.6.0"
+    "@s-ui/studio-utils": "1",
+    "@schibstedspain/sui-theme": "8",
+    "cvz-skylab-movies": "1",
+    "cvz-skylab-theme": "1"
   },
   "config": {
     "sui-mono": {
