@@ -1,5 +1,5 @@
 {
-  "name": "mv-movies-search",
+  "name": "cvz-react-movies-search",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@s-ui/component-dependencies": "1",
-    "@s-ui/react-context": "^1.4.0"
+    "cvz-react-movies-search-box": "1",
+    "cvz-react-movies-search-list": "1"
   },
   "keywords": [],
   "author": "",

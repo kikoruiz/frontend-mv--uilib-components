@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import MoviesSearchBox from 'mv-movies-search-box'
-import MoviesSearchList from 'mv-movies-search-list'
+import MoviesSearchBox from 'cvz-react-movies-search-box'
+import MoviesSearchList from 'cvz-react-movies-search-list'
 
 class MoviesSearch extends Component {
   state = {
