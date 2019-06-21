@@ -19,7 +19,7 @@ class MovieDetail extends Component {
     const imageSrc = image && `https://image.tmdb.org/t/p/w300${image}`
     return (
       <div className="mv-MovieDetail">
-        <h1>{title}</h1>
+        <h1>{title}!!!!!!!</h1>
         <img src={imageSrc} />
         <p>{description}</p>
       </div>
