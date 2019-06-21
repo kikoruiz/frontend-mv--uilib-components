@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const MoviesSearchBox = ({onSearch}) => (
   <div className="mv-MoviesSearchBox">
-    <AtomInput type="text" onEnter={onSearch} />
+    <AtomInput type="text" onEnter={onSearch} placeholder="Search ...." />
   </div>
 )
 
